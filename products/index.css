@@ -15,7 +15,7 @@ ul,ol {
 
 .products_image_container {
   display: flex;
-  gap: 20px;
+  gap: 0.5rem;
 }
 
 .image_container,
@@ -259,6 +259,7 @@ ol {
 
 .white{
   background-color: white;
+  position: relative;
 }
 .black{
   background-color: black;
@@ -309,4 +310,126 @@ background-color: #ebd998;
 
 .arrow-chevron img{
  height: 30px;
+}
+
+.notification{
+  display: flex;
+  color: #25549e;
+  align-items: center;
+}
+
+.notification img{
+  height: 1.8rem;
+  /* width: 1.2rem; */
+}
+
+.notification p{
+  font-size:1.25rem;
+
+}
+
+.price_tag{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.price_tag span:first-child{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.price_tag span:first-child + span{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  text-decoration: line-through;
+  align-self: end;
+}
+
+.notification + p{
+  font-size: 2.5rem;
+  color: #242424;
+  font-weight: bold;
+}
+
+.rightside{
+  width: 35%;
+  /* background-color: red; */
+  margin-left: 40px;
+}
+
+.in_stock{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 80%;
+  width: 12rem;
+  color: #ea3335;
+  font-size: 1rem;
+  border: 1px solid #ea3335;
+  text-align: center;
+ padding-left:25%;
+}
+.instock_container img{
+  height: 100%;
+  position: absolute;
+}
+
+.instock_container{
+  display: inline-flex;
+  height: 4rem;
+  align-items: center;
+  position: absolute;
+  right: 0;
+ 
+}
+
+.stock_details{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.review{
+  background-color: #f5f7f8;
+  margin-top: 5rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.star_img--container{
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.star_img--container img{
+  height: 2rem;
+}
+.username{
+color: #424242;
+font-size: bolder;
+}
+
+.pastelblue{
+  background-color:#9ba9d0;
+}
+.color_palette{
+  margin-top: 5rem;
+}
+
+.color_code{
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+
+#sec_white{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
