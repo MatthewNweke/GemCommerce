@@ -1,155 +1,312 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+ul,ol {
+  padding: 0;
+  margin: 0;
 }
 
 .products_image_container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.image_container,
+.vert_image_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7f8;
+  background-image: url("./assets/hoodie.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .image_container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f7f8;
-    background-image: url("./assets/hoodie.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 30%;
+  height: 70vh;
 }
 
-.image_container {
-    width: 30%;
-    height: 70vh;
-}
-
-
-
- .image_container figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    bottom: 5px;
+.image_container figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 5px;
 }
 
 .image_container figcaption {
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 3px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 3px;
 }
 
 .slashed_price {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #EA3335;
-    border-radius: 0.4rem;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: white;
-    z-index: 1;
-    width: 70px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ea3335;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: white;
+  z-index: 1;
+  width: 70px;
+  text-align: center;
 }
 
 .sales_percent {
-    /* background-color: #EA3335; */
-    color: #EA3335;
-    padding: 5px 7px;
+  /* background-color: #EA3335; */
+  color: #ea3335;
+  padding: 5px 7px;
 }
 
-
-.sale{
-    color: white;
-    background-color:#EA3335 ;
-    padding: 5px 7px;
-
+.sale {
+  color: white;
+  background-color: #ea3335;
+  padding: 5px 7px;
 }
-
-
 
 .image_container figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 1.5rem;
 }
 
-
-
 .color-section {
-    text-align: center;
-    width: 80%;
-  }
-  
-  .color-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .divider {
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    margin: 10px 0 20px;
-  }
-  
-  .hoodie-colors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the rows horizontally */
-    gap: 20px; /* Add spacing between items */
-  }
-  
-  .hoodie {
-    text-align: center;
-    flex: 1 1 calc(33.33% - 20px); /* Ensure 3 items fit in the first row */
-    max-width: 150px;
-  }
-  
-  .hoodie:nth-child(4),
-  .hoodie:nth-child(5) {
-    flex: 1 1 calc(50% - 20px); /* Make 2 items on the second row */
-  }
-  
-  .hoodie img {
-    width: 100%;
-    /* height: auto; */
-    max-width: 100px;
-    
-  }
-  
-  .hoodie p {
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 500;
-  }
+  text-align: center;
+  width: 80%;
+  background-color:  #f9f9f9;
+}
 
-  .leftside{
+.color-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-    margin: 0;
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: #000;
+  margin:20px auto;
+}
+
+.hoodie-colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the rows horizontally */
+  gap: 20px; /* Add spacing between items */
+}
+
+.hoodie {
+  text-align: center;
+  flex: 1 1 calc(33.33% - 20px); /* Ensure 3 items fit in the first row */
+  max-width: 150px;
+}
+
+.hoodie:nth-child(4),
+.hoodie:nth-child(5) {
+  flex: 1 1 calc(50% - 20px); /* Make 2 items on the second row */
+}
+
+.hoodie img {
+  width: 100%;
+  /* height: auto; */
+  max-width: 100px;
+}
+
+.hoodie p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.leftside {
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* background-color: #f9f9f9; */
+  width: 25%;
+  position: relative;
+}
+
+.vert_image_container {
+  height: 30vh;
+  width: 60%;
+}
+
+.vert_image_container figcaption {
+    background-color: black;
+    color: white;
+    width: 60%;
+    font-size: 0.75rem;
+}
+.vert_image_container figure img {
+    width: 60%;
+    height: 60%;
+}
+
+
+.vert_image_container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hoodie_slides{
+    height: 280px;
+    width: 220px;
+}
+
+.leftside{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  
+}
+
+.hoodie_slides_container{
   background-color: #f9f9f9;
-  }
+  width: 80%;
+  text-align: center;
+}
+
+.font_styles{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text-section {
+  width: 80%;
+  background-color:  #f9f9f9;
+}
+.text-title{
+text-align: center;
+}
+
+ol {
+  list-style: none; /* Remove default list styling */
+  counter-reset: item; /* Initialize counter for list items */
+  padding: 0;
+}
+
+.font_styles div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between items */
+}
+
+.font_styles li {
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Circular Background for Numbers */
+.font_styles li::before {
+  content: counter(item); /* Use counter for numbering */
+  counter-increment: item; /* Increment counter */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%; /* Makes it circular */
+  font-weight: bold;
+}
+.text-color_section{
+  width: 80%;
+  background-color: #f9f9f9;
+  padding:2rem 0;
+}
+
+.color_circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+}
+
+/* colors */
+
+.white{
+  background-color: white;
+}
+.black{
+  background-color: black;
+}
+.blue{
+  background-color: #4e8ef0;
+}
+.gold{
+background-color: #ebd998;
+}
+
+.pink{
+  background-color: #f67aa0;
+}
+.green{
+  background-color: #76c788;
+}
+
+.color_firstrow,.color_secrow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.color_picker--container{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+
+.portrait_img--section{
+ background-image: url("./assets/portrait.svg");
+ width: 80%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100px;
+ background-position: center;
+}
+
+.arrow-chevron{
+  background-color: #f9f9f9;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+
+.arrow-chevron img{
+ height: 30px;
+}
