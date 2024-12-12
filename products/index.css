@@ -809,7 +809,6 @@ right: 10%;
     }
 
     .tab.active {
-      color: #ffffff;
       /* background-color: #007bff; */
       border-bottom: 3px solid #0056b3;
     }
