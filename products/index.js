@@ -37,3 +37,36 @@ tabs.forEach((tab) => {
     document.getElementById(tab.dataset.target).classList.add("active");
   });
 });
+
+
+
+
+
+const decrementBtn = document.getElementById('decrement');
+const incrementBtn = document.getElementById('increment');
+const quantityDisplay = document.getElementById('quantity');
+
+let quantity = 1; // Default quantity
+
+// Update quantity display
+const updateQuantityDisplay = () => {
+  quantityDisplay.textContent = quantity;
+  decrementBtn.disabled = quantity <= 1; // Disable decrement button if quantity is 1
+};
+
+// Increment functionality
+incrementBtn.addEventListener('click', () => {
+  quantity += 1;
+  updateQuantityDisplay();
+});
+
+// Decrement functionality
+decrementBtn.addEventListener('click', () => {
+  if (quantity > 1) {
+    quantity -= 1;
+    updateQuantityDisplay();
+  }
+});
+
+// Initial state update
+updateQuantityDisplay();

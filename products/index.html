@@ -136,7 +136,7 @@
             <img src="./assets/notification_bell.svg" alt="" />
             <p>Selling fast! 5 people have this in their carts.</p>
           </div>
-          <p class="">Personalized Photo and Slogan Text Hoodie</p>
+          <p class="personalized">Personalized Photo and Slogan Text Hoodie</p>
           <div class="stock_details">
             <div class="price_tag"><span>$39.99</span><span>$44.44</span></div>
             <div class="instock_container">
@@ -201,59 +201,59 @@
 
           <div class="get_hoodie">
             <div class="change_number">
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
+              <button id="decrement"><span>-</span></button>
+              <span id="quantity">1</span>
+              <button id="increment"><span>+</span></button>
             </div>
 
-            <button>GET MY HOODIE</button>
+            <button >GET MY HOODIE</button>
           </div>
         </div>
       </div>
       <div class="tab_contents">
+        <div class="tabs-container">
+          <!-- Tab Headers -->
+          <div class="tabs">
+            <div class="tab active" data-target="overview">OVERVIEW</div>
+            <div class="tab" data-target="sizing">SIZING</div>
+            <div class="tab" data-target="packaging">PACKAGING</div>
+            <div class="tab" data-target="shipping ">
+              SHIPPING & FREE RETURNS
+            </div>
+            <!-- <div class="tab" data-target=""></div> -->
+          </div>
 
-     
-      <div class="tabs-container">
-        <!-- Tab Headers -->
-        <div class="tabs">
-          <div class="tab active" data-target="overview">Overview</div>
-          <div class="tab" data-target="sizing">Sizing</div>
-          <div class="tab" data-target="packaging">Packaging</div>
-          <div class="tab" data-target="shipping">Shipping</div>
-          <div class="tab" data-target="free-returns">Free Returns</div>
-        </div>
-
-        <!-- Tab Content -->
-        <div class="tab_content">
-          <div class="content active" id="overview">
-            <p>
-              This is the Overview content. It gives a general introduction to
-              the product.
-            </p>
-          </div>
-          <div class="content" id="sizing">
-            <p>
-              This section provides details about the sizing of the product.
-            </p>
-          </div>
-          <div class="content" id="packaging">
-            <p>
-              This is the Packaging section. Learn about how the product is
-              packed.
-            </p>
-          </div>
-          <div class="content" id="shipping">
-            <p>
-              Here, you can find information about Shipping options and
-              timelines.
-            </p>
-          </div>
-          <div class="content" id="free-returns">
+          <!-- Tab Content -->
+          <div class="tab_content">
+            <div class="content active" id="overview">
+              <p>
+                This is the Overview content. It gives a general introduction to
+                the product.
+              </p>
+            </div>
+            <div class="content" id="sizing">
+              <p>
+                This section provides details about the sizing of the product.
+              </p>
+            </div>
+            <div class="content" id="packaging">
+              <p>
+                This is the Packaging section. Learn about how the product is
+                packed.
+              </p>
+            </div>
+            <div class="content" id="shipping">
+              <p>
+                Here, you can find information about Shipping options and
+                timelines.
+              </p>
+            </div>
+            <!-- <div class="content" id="free-returns">
             <p>This section explains the Free Returns policy and conditions.</p>
+          </div> -->
           </div>
         </div>
       </div>
-    </div>
     </main>
     <script src="./index.js"></script>
   </body>
