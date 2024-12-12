@@ -1,5 +1,9 @@
+body{
+  overflow-x: hidden;
+}
 html {
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 *,
@@ -121,27 +125,32 @@ ol {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
 }
 .bruselo{
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 .audiowide{
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 .brotherina{
   font-family: "Tinos", serif;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .londrina{
   font-family: "Londrina Solid", sans-serif;
   font-weight: 900;
   font-style: normal;
+  cursor: pointer;
 }
 
 .dancing{
@@ -149,18 +158,21 @@ ol {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .nosifer{
   font-family: "Nosifer", sans-serif;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 .playlist{
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 
@@ -445,6 +457,11 @@ ol {
   border: 1px solid #ea3335;
   text-align: center;
   padding-left: 25%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
 }
 .instock_container img {
   height: 100%;
@@ -474,6 +491,7 @@ ol {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  
 }
 
 .star_img--container {
@@ -670,4 +688,74 @@ ol {
   padding: 1.5rem 2rem;
   /* border: none; */
   /* border-right:1px solid #242424 ; */
+}
+
+
+@media (max-width:1589px) {
+  .slashed_price{
+    width: 20%;
+  }
+}
+@media (max-width:1580px) {
+  .products_image_container{
+    flex-flow: column wrap;
+    align-items: center;
+   
+  }
+  .leftside,.rightside, .image_container{
+    width: 100%;
+  }
+ 
+  .slashed_price{
+    width: auto;
+    right: 2rem;
+  }
+  .instock_container{
+right: 10%;
+  }
+ 
+
+  .color-section,.text-section,.text-color_section{
+    width: 100%;
+  }
+
+  .text-section{
+    font-size: 0.8rem;
+  }
+.font_styles{
+  flex-direction: column;
+  gap: 0;
+}
+ 
+.rightside{
+  margin-left:0;
+  padding: 1rem;
+}
+
+}
+
+
+
+@media (max-width:524px) {
+  .stock_details {
+    display: flex;
+    align-items: center;
+    position: static;
+    flex-direction: column;
+  }
+  .instock_container,.instock_container img{
+    position: static;
+    text-align: center;
+
+  }
+  .in_stock{
+    padding-left: 0;
+  }
+  .instock_container img{
+    display: none;
+  }
+ .leftside{
+  margin-bottom: 5rem;
+  box-shadow: 2px 2px 50px #e0e0e0;
+ }
 }

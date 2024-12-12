@@ -1,17 +1,21 @@
-function changeColor(color) {
-    const hoodie = document.getElementById('hoodie');
-    hoodie.style.backgroundColor = color;
-  }
-  
-  function updateFont() {
-    const customText = document.getElementById('custom-text');
-    const font = document.getElementById('text-font').value;
-    customText.style.fontFamily = font;
-  }
-  
-  function updateTextColor() {
-    const customText = document.getElementById('custom-text');
-    const color = document.getElementById('text-color').value;
-    customText.style.color = color;
-  }
-  
+
+
+// Select the "here" text element
+const hereText = document.querySelector(".here");
+
+// Select all font options
+const fontOptions = document.querySelectorAll(".font_styles li");
+
+// Add click event listeners to each font option
+fontOptions.forEach((fontOption) => {
+  fontOption.addEventListener("click", () => {
+    // Get the class name of the clicked font option
+    const selectedFontClass = fontOption.className;
+
+    // Change the font family of the "here" text
+    hereText.style.fontFamily = getComputedStyle(fontOption).fontFamily;
+
+    // Optional: Update the text content to reflect the selected font
+    hereText.textContent = selectedFontClass.charAt(0).toUpperCase() + selectedFontClass.slice(1);
+  });
+});
