@@ -19,3 +19,21 @@ fontOptions.forEach((fontOption) => {
     hereText.textContent = selectedFontClass.charAt(0).toUpperCase() + selectedFontClass.slice(1);
   });
 });
+
+
+// Select all tab elements and content sections
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".content");
+
+// Add click event listeners to each tab
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove 'active' class from all tabs and contents
+    tabs.forEach((tab) => tab.classList.remove("active"));
+    contents.forEach((content) => content.classList.remove("active"));
+
+    // Add 'active' class to the clicked tab and its corresponding content
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.target).classList.add("active");
+  });
+});
